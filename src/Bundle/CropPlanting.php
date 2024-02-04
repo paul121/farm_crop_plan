@@ -19,7 +19,7 @@ class CropPlanting extends PlanRecord {
 
     // Build label with the referenced plan and plant.
     if ($plan = $this->getPlan()) {
-      if ($plant = $this->get('plant')->first()?->get('entity')) {
+      if ($plant = $this->get('plant')->first()?->entity) {
         return $this->t('Crop planting: %plant - %plan', ['%plant' => $plant->label(), '%plan' => $plan->label()]);
       }
 
