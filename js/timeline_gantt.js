@@ -8,7 +8,7 @@
             target: element,
             from: Date.now()-86400,
             to: Date.now(),
-            fitWidth: false,
+            fitWidth: true,
             columnUnit: 'day',
             columnOffset: 7,
             rowHeight: 34,
